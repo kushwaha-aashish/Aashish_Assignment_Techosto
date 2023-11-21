@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/styles.css">
+    <title>Add Student</title>
+</head>
+<body>
+    <h1>Add Student</h1>
+    <form action="/add-student" method="post" enctype="multipart/form-data">
+        <button type="browse-student">Browse Stedent</button>
+        <button type="edit-profile">Edit Profile</button>
+        <br>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        
+        <label for="photo">Photo:</label>
+        <input type="file" id="photo" name="photo" accept="image/*" required>
+        <br>
+        
+
+        <label for="code">Field Of Interest:</label>
+        <select required>
+            <option>
+                <p>Security</p>
+            </option>
+        </select>
+        <br>
+        
+        <label for="job-type">Seeking</label>
+        <select required>
+            <option>
+                <p>Internship</p>
+            </option>
+            <option>
+                <p>Remote</p>
+            </option>
+            <option>
+                <p>FT Possition</p>
+            </option>
+            <option>
+                <p>Not seeking</p>
+            </option>
+        </select>
+        <br>
+
+        <label>Tech Stack</label>
+        <select required>
+            <option>
+                <p>Ruby</p>
+            </option>
+            <option>
+                <p>Rails</p>
+            </option>
+            <option>
+                <p>JavaScript</p>
+            </option>
+            <option>
+                <p>HTML/CSS3</p>
+            </option>
+        </select>
+        <br>
+
+        <button type="clear">Delete Profile</button>
+        <button type="submit">Save Changes</button>
+    </form>
+    <script src="../app.js"></script>
+</body>
+</html>
